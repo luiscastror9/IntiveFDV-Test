@@ -4,9 +4,15 @@ using System.Linq;
 
 namespace IntiveFDV_Test_UT
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [TestClass]
     public class UnitTestIntiveFDV_Test
     {
+        /// <summary>
+        /// Tests the method basic.
+        /// </summary>
         [TestMethod]
         public void TestMethodBasic()
         {
@@ -14,9 +20,13 @@ namespace IntiveFDV_Test_UT
          
         }
 
+        /// <summary>
+        /// Tests the method date.
+        /// </summary>
         [TestMethod]
         public void TestMethodDate()
         {
+            // Change this vars for use in Testing
             DateTime startdate = new DateTime(2017, 09, 15, 09, 15, 25);
             DateTime enddate = new DateTime(2017, 09, 30, 09, 15, 25);
 
@@ -31,9 +41,14 @@ namespace IntiveFDV_Test_UT
 
             //return rs;
         }
+        /// <summary>
+        /// Tests the method date detailed.
+        /// </summary>
         [TestMethod]
         public void TestMethodDateDetailed()
         {
+            // Change this vars for use in Testing
+
             DateTime startdate = new DateTime(2017, 09, 15, 09, 15, 25);
             DateTime enddate = new DateTime(2017, 09, 30, 09, 15, 25);
 
@@ -49,9 +64,14 @@ namespace IntiveFDV_Test_UT
             //return rs;
         }
 
+        /// <summary>
+        /// Tests the method total discount.
+        /// </summary>
         [TestMethod]
         public void TestMethodTotalDiscount()
         {
+            // Change this vars for use in Testing
+
             DateTime startdate = new DateTime(2017, 09, 15, 09, 15, 25);
             DateTime enddate = new DateTime(2017, 09, 30, 09, 15, 25);
 
