@@ -49,11 +49,8 @@ namespace IntiveFDV_Test_UT
         {
             // Change this vars for use in Testing
 
-            DateTime startdate = new DateTime(2017, 09, 15, 09, 15, 25);
+            DateTime startdate = new DateTime(2017, 10, 15, 10, 15, 25);
             DateTime enddate = new DateTime(2017, 09, 30, 09, 15, 25);
-
-
-            double rs;
             IntiveFDV_Test.Rental Rent = new IntiveFDV_Test.Rental().RentTotal(startdate, enddate);
            // Rent.RentTotal(startdate, enddate);
             System.Diagnostics.Debug.WriteLine("Rental ID:"+Rent.idRental);

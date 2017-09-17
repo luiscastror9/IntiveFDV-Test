@@ -81,11 +81,14 @@ namespace IntiveFDV_Test
             Rental Rent = new Rental();
             Rent.idRental = new Guid();
             TimeSpan diff = end.Subtract(start);
-            //DateTime dt = Convert.ToDateTime(diff.ToString());
             Rent.startdateRental = start;
             Rent.enddateRental = end;
-            Rent.totalRental= Convert.ToDouble(Rent.RentalByDays(diff.Days).totalRental + Rent.RentalByHour(diff.Hours).totalRental + (diff.Days >= 7 ? Rent.RentalByWeeks(diff.Days / 7).totalRental : 0));
-            return Rent;
+            if (diff.Ticks > 0)
+            {
+               
+                Rent.totalRental = Convert.ToDouble(Rent.RentalByDays(diff.Days).totalRental + Rent.RentalByHour(diff.Hours).totalRental + (diff.Days >= 7 ? Rent.RentalByWeeks(diff.Days / 7).totalRental : 0));
+            }
+                return Rent;
         }
 
         /// <summary>
